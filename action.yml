@@ -1,0 +1,9 @@
+name: Recycler Intake
+description: Normalize incoming battery pack records
+runs:
+  using: composite
+  steps:
+    - run: ./normalize-intake.sh
+      shell: bash
+permissions:
+  contents: read
